@@ -1,4 +1,4 @@
-package MyJava.OOPS.Inheritance;
+package MyJava.OOPS.Inheritance_Polymorphism;
 // Inheritance: is a mechanism in which one object acquires all the properties and behaviors of a parent object.
 // It is used to achieve code reusability.
 // Types of inheritance: single, multiple, hierarchical, multilevel, hybrid
@@ -64,6 +64,8 @@ class Truck extends Vehicle{
 
 public class Vehicle_Main{
     public static void main(String[] args){
+
+        // -------------- Inheritance --------------
         Vehicle vehicle = new Vehicle("Generic", 2000);
 
         Car car = new Car("Toyota", 2020, 4);
@@ -79,5 +81,41 @@ public class Vehicle_Main{
 
         car.carSound();
         truck.truckSound();
+
+
+        // -------------- Inheritance --------------
+
+        // -------------- Polymorphism --------------
+
+
+        // Polymorphism: is a mechanism in which one object can take on many forms.
+        // It is used to achieve code reusability.
+        // Types of polymorphism: compile time polymorphism and run time polymorphism
+        // Compile time polymorphism: is achieved through method overloading
+        // Run time polymorphism: is achieved through method overriding
+
+        // Method overloading: is a mechanism in which one method can have multiple definitions.
+        // Method overriding: is a mechanism in which one method can have multiple definitions.
+
+        Vehicle [] vehicles = {vehicle, car, truck};
+        for(Vehicle v : vehicles){
+            // Run time polymorphism - method overriding, because implementation called at runtime
+            v.start(); 
+            v.displayInfo();
+        }
+
+        /*
+         * Key differences
+            Overloading: Same method name in the same class, different parameter lists.
+            Overriding: Subclass provides a new implementation for a superclass/interface method with 
+            the same signature.
+            Polymorphism:
+            Overloading: Compile-time (static) polymorphism.
+            Overriding: Runtime (dynamic) polymorphism.
+         */
+
+        // -------------- Polymorphism --------------
+
+        
     }
 }
