@@ -1,18 +1,18 @@
-import java.util.HashSet;
-//import java.lang.Math;
+import java.util.HashMap;
+//import java.lang.Math; // imported implicitly by java
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
-        HashSet<Character> hs = new HashSet<>();
+        HashMap<Character, Integer> hm = new HashMap<>();
         int left = 0;
         int maxLength = 0;
 
         for(int right = 0; right < s.length(); right++){
             char c = s.charAt(right);
-            while(hs.contains(c)){
-                hs.remove(s.charAt(left));
+            while(hm.containsKey(c)){
+                hm.remove(s.charAt(left));
                 left++;
             }
-            hs.add(c);
+            hm.put(c, right);
             maxLength = Math.max(maxLength, right - left + 1);
         }
         
