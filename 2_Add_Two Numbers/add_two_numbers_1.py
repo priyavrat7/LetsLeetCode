@@ -3,6 +3,17 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+""" 
+node0@0x1063a2f50: val=2, next=@ 0x1063a2fd0
+node1@0x1063a2fd0: val=4, next=@ 0x1063a2f90
+node2@0x1063a2f90: val=3, next=@ None 
+"""
+
+
+
+# Time complexity: O(max(n, m)), where n and m are the lengths of the two input linked lists.
+
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
         """

@@ -3,6 +3,8 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+# Time complexity: O(n + m), where n and m are the lengths of the two input linked lists.
+
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
         """
