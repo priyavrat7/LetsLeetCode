@@ -9,3 +9,7 @@ For example:
 Folder Name - 1_Two_Sum,
 Main Code file(.cpp or .py or .oyc etc),
 Problem Description file: description.txt
+
+
+Here is where you can find the list of problem descriptions:
+https://leetcode.com/problem-list/rabvlt31/
