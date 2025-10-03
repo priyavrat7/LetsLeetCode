@@ -1,4 +1,4 @@
-package MyJava.OOPS.Inheritance_Polymorphism;
+package OOPS.Inheritance_Polymorphism;
 // Inheritance: is a mechanism in which one object acquires all the properties and behaviors of a parent object.
 // It is used to achieve code reusability.
 // Types of inheritance: single, multiple, hierarchical, multilevel, hybrid

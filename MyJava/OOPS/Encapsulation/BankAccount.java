@@ -1,4 +1,4 @@
-package MyJava.OOPS.Encapsulation;
+package OOPS.Encapsulation;
 
 // Encapsulation: Data hiding and control over the data
 // Access modifiers: private, protected, public, default
@@ -17,6 +17,7 @@ class Bank{
     }
 
     public double getBalance(){
+        
         return balance;
     }
 

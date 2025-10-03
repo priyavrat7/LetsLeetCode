@@ -1,4 +1,4 @@
-package MyJava.OOPS.Abstraction;
+package OOPS.Abstraction;
 
 // Abstract class is a class that is declared with the abstract keyword.
 // It can have abstract methods and concrete methods.
@@ -27,7 +27,7 @@ class Rectangle extends Shape{
     private double height;
 
     public Rectangle(String color, double width, double height){
-        super(color);
+        super(color); // calls parent class constructor and passes color parameter to it
         this.width = width;
         this.height = height;
     }
