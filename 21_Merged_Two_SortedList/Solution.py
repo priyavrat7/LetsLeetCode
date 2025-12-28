@@ -6,33 +6,32 @@
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
 
-        mergedList = ListNode(0)
-        ref_mergedList = mergedList
+        temp = ListNode(0)
+        merged = temp
 
-        while(list1 and list2):
-            if(list1.val <= list2.val):
-                mergedList.next = ListNode(list1.val)
-                mergedList = mergedList.next
-                list1 = list1.next
+
+        l1 = list1
+        l2 = list2
+
+        while(l1 and l2):
+            if(l1.val <= l2.val):
+                merged.next = l1
+                l1 = l1.next
+
+            else:
+                merged.next = l2
+                l2 = l2.next
             
-            elif(list2.val < list1.val):
-                mergedList.next = ListNode(list2.val)
-                mergedList = mergedList.next
-                list2 = list2.next
+            # It is mandatory to go to next location in the merged after if or else code execution
+            merged = merged.next
+
+        if(l1):
+            merged.next = l1
+        if(l2):
+            merged.next = l2
         
-        # Drain
-        if(list1 == None):
-            while(list2):
-                mergedList.next = ListNode(list2.val)
-                mergedList = mergedList.next
-                list2 = list2.next
-
-        elif(list2 == None):
-            while(list1):
-                mergedList.next = ListNode(list1.val)
-                mergedList = mergedList.next
-                list1 = list1.next
-
+        
+        
+        return temp.next
 
         
-        return ref_mergedList.next
