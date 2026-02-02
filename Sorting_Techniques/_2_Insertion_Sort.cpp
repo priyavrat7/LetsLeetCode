@@ -31,3 +31,12 @@ int main(){
 
     return 0;
 }
+// Time: Best: O(n) | Worst/Avg: O(n^2)
+// Space: O(1)
+/*
+2. Insertion Sort
+Intuition: Like sorting a deck of cards in your hand. You pick one card at a time
+and "insert" it into its correct position relative to the cards already in your hand.
+Approach: Builds the final sorted array one item at a time. It is much less
+efficient on large lists than more advanced algorithms.
+*/

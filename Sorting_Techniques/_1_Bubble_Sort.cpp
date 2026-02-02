@@ -42,3 +42,12 @@ int main(){
 }
 // Time complexity: O(n^2) in worst and average case, O(n) in best case
 // Space complexity: O(1)
+
+/*
+1. Bubble Sort
+Intuition: Imagine bubbles rising to the surface. In each "pass," the largest
+element "bubbles up" to its correct position at the end of the array by comparing
+adjacent pairs.
+Approach: Repeatedly steps through the list, compares adjacent elements, and
+swaps them if they are in the wrong order.
+*/
