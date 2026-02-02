@@ -38,4 +38,9 @@ so on.
 Approach: Divides the input list into two parts: a sorted sublist and an unsorted
 sublist. It repeatedly finds the minimum element from the unsorted part and
 moves it to the end of the sorted part.
+
+Complexity
+ Time: Best/Worst/Avg: O(n^2)
+ Space: O(1)
+
 */
