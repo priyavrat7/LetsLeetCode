@@ -1,4 +1,4 @@
-class Solution {
+class TrappingRainWaterSolution {
     public int trap(int[] height) {
 
         int left = 0;

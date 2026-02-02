@@ -9,11 +9,9 @@ package OOPS.Encapsulation;
 
 class Bank{
     private double balance;
-    private String accountNumber;
 
     public Bank(double balance, String accountNumber){ // constructor
         this.balance = balance;
-        this.accountNumber = accountNumber;
     }
 
     public double getBalance(){
