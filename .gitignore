@@ -11,6 +11,12 @@ __pycache__/
 # C extensions
 *.so
 
+# C/C++ build outputs
+*.dSYM/
+Sorting_Techniques/_1_Bubble_Sort
+Sorting_Techniques/_2_Insertion_Sort
+Sorting_Techniques/_3_Selection_Sort
+
 # Distribution / packaging
 .Python
 build/
