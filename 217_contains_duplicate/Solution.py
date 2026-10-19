@@ -63,15 +63,7 @@
 class Solution:
     def containsDuplicate(self, nums: list[int]) -> bool:
 
-        myset = set()
-        for i in range(len(nums)):
-            myset.add(nums[i])
-
-        if len(nums) != len(myset):
-            return True
-
-        else:
-            return False
+        return (len(nums) != len(set(nums)))
         
 # @lc code=end
 
